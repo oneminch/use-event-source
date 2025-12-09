@@ -18,9 +18,6 @@ catalogs:
     eslint:
       specifier: ^9.39.1
       version: 9.39.1
-    tsdown:
-      specifier: ^0.16.8
-      version: 0.16.8
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
@@ -76,8 +73,8 @@ importers:
         specifier: catalog:cli
         version: 9.39.1(jiti@2.6.1)
       tsdown:
-        specifier: catalog:cli
-        version: 0.16.8(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.17.2
+        version: 0.17.2(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: catalog:cli
         version: 5.9.3
@@ -2917,6 +2914,10 @@ packages:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
 
+  import-without-cache@0.2.2:
+    resolution: {integrity: sha512-4TTuRrZ0jBULXzac3EoX9ZviOs8Wn9iAbNhJEyLhTpAGF9eNmYSruaMMN/Tec/yqaO7H6yS2kALfQDJ5FxfatA==}
+    engines: {node: '>=20.19.0'}
+
   impound@1.0.0:
     resolution: {integrity: sha512-8lAJ+1Arw2sMaZ9HE2ZmL5zOcMnt18s6+7Xqgq2aUVy4P1nlzAyPtzCDxsk51KVFwHEEdc6OWvUyqwHwhRYaug==}
 
@@ -4279,13 +4280,13 @@ packages:
     peerDependencies:
       typescript: '>=4.0.0'
 
-  tsdown@0.16.8:
-    resolution: {integrity: sha512-6ANw9mgU9kk7SvTBKvpDu/DVJeAFECiLUSeL5M7f5Nm5H97E7ybxmXT4PQ23FySYn32y6OzjoAH/lsWCbGzfLA==}
+  tsdown@0.17.2:
+    resolution: {integrity: sha512-SuU+0CWm/95KfXqojHTVuwcouIsdn7HpYcwDyOdKktJi285NxKwysjFUaxYLxpCNqqPvcFvokXLO4dZThRwzkw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@vitejs/devtools': ^0.0.0-alpha.18
+      '@vitejs/devtools': ^0.0.0-alpha.19
       publint: ^0.3.0
       typescript: ^5.0.0
       unplugin-lightningcss: ^0.4.0
@@ -5919,7 +5920,8 @@ snapshots:
 
   '@oxc-project/types@0.102.0': {}
 
-  '@oxc-project/types@0.99.0': {}
+  '@oxc-project/types@0.99.0':
+    optional: true
 
   '@oxc-transform/binding-android-arm64@0.102.0':
     optional: true
@@ -6143,7 +6145,8 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-beta.50': {}
 
-  '@rolldown/pluginutils@1.0.0-beta.52': {}
+  '@rolldown/pluginutils@1.0.0-beta.52':
+    optional: true
 
   '@rolldown/pluginutils@1.0.0-beta.53': {}
 
@@ -7774,6 +7777,8 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
+  import-without-cache@0.2.2: {}
+
   impound@1.0.0:
     dependencies:
       exsolve: 1.0.8
@@ -9347,7 +9352,7 @@ snapshots:
 
   rfdc@1.4.1: {}
 
-  rolldown-plugin-dts@0.18.3(rolldown@1.0.0-beta.52)(typescript@5.9.3):
+  rolldown-plugin-dts@0.18.3(rolldown@1.0.0-beta.53)(typescript@5.9.3):
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -9358,7 +9363,7 @@ snapshots:
       get-tsconfig: 4.13.0
       magic-string: 0.30.21
       obug: 2.1.1
-      rolldown: 1.0.0-beta.52
+      rolldown: 1.0.0-beta.53
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -9383,6 +9388,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.0.0-beta.52
       '@rolldown/binding-win32-ia32-msvc': 1.0.0-beta.52
       '@rolldown/binding-win32-x64-msvc': 1.0.0-beta.52
+    optional: true
 
   rolldown@1.0.0-beta.53:
     dependencies:
@@ -9745,17 +9751,16 @@ snapshots:
       picomatch: 4.0.3
       typescript: 5.9.3
 
-  tsdown@0.16.8(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.17.2(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
-      chokidar: 5.0.0
-      diff: 8.0.2
       empathic: 2.0.0
       hookable: 5.5.3
+      import-without-cache: 0.2.2
       obug: 2.1.1
-      rolldown: 1.0.0-beta.52
-      rolldown-plugin-dts: 0.18.3(rolldown@1.0.0-beta.52)(typescript@5.9.3)
+      rolldown: 1.0.0-beta.53
+      rolldown-plugin-dts: 0.18.3(rolldown@1.0.0-beta.53)(typescript@5.9.3)
       semver: 7.7.3
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
