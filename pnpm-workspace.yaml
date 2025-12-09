@@ -4,21 +4,21 @@ packages:
 
 catalogs:
   cli:
-    '@antfu/eslint-config': ^6.1.0
+    '@antfu/eslint-config': ^6.5.1
     '@antfu/ni': ^27.0.1
     bumpp: ^10.3.2
     eslint: ^9.39.1
     tsdown: ^0.16.8
     typescript: ^5.9.3
-    vite: ^7.2.6
+    vite: ^7.2.7
   inlined:
-    '@antfu/utils': ^9.2.0
+    '@antfu/utils': ^9.3.0
   playground:
-    nuxt: ^4.2.1
+    nuxt: ^4.2.2
     vue: ^3.5.25
     vue-router: ^4.6.3
   types:
-    '@types/node': ^24.10.1
+    '@types/node': ^24.10.2
 
 ignoreWorkspaceRootCheck: true
 
