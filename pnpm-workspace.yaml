@@ -4,7 +4,7 @@ packages:
 
 catalogs:
   cli:
-    '@antfu/eslint-config': ^6.2.0
+    '@antfu/eslint-config': ^6.1.0
     '@antfu/ni': ^27.0.1
     bumpp: ^10.3.2
     eslint: ^9.39.1
@@ -12,7 +12,7 @@ catalogs:
     typescript: ^5.9.3
     vite: ^7.2.6
   inlined:
-    '@antfu/utils': ^9.3.0
+    '@antfu/utils': ^9.2.0
   playground:
     nuxt: ^4.2.1
     vue: ^3.5.25

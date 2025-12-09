@@ -40,7 +40,7 @@
     "nuxt": "^3.0.0",
     "vue": "^3.0.0"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "keywords": [
     "nuxt",
     "vue",
