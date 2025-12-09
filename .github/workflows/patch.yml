@@ -1,0 +1,13 @@
+name: Auto Patch Version
+
+on:
+  pull_request:
+    types: [opened]
+    branches: [main]
+
+jobs:
+  patch:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    uses: oneminch/workflows/.github/workflows/auto-patch.yml@v1
+    permissions:
+      contents: write
