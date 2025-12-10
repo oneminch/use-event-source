@@ -1,6 +1,6 @@
 {
   "name": "@minch/use-event-source",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "A Vue composable for simplifying Server-Sent Events.",
   "type": "module",
   "main": "./dist/index.mjs",
