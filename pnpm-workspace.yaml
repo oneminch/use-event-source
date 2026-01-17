@@ -15,8 +15,8 @@ catalogs:
     '@antfu/utils': ^9.3.0
   playground:
     nuxt: ^4.2.2
-    vue: ^3.5.25
-    vue-router: ^4.6.3
+    vue: ^3.5.26
+    vue-router: ^4.6.4
   types:
     '@types/node': ^24.10.9
 
