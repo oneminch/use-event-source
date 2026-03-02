@@ -7,7 +7,7 @@ catalogs:
     '@antfu/eslint-config': ^6.7.3
     '@antfu/ni': ^27.0.1
     bumpp: ^10.4.1
-    eslint: ^9.39.2
+    eslint: ^9.39.3
     tsdown: ^0.18.4
     typescript: ^5.9.3
     vite: ^7.3.1
@@ -15,15 +15,18 @@ catalogs:
     '@antfu/utils': ^9.3.0
   playground:
     nuxt: ^4.3.1
-    vue: ^3.5.28
+    vue: ^3.5.29
     vue-router: ^4.6.4
   types:
-    '@types/node': ^24.10.13
+    '@types/node': ^24.11.0
 
 ignoreWorkspaceRootCheck: true
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
+
+overrides:
+  serialize-javascript@<=7.0.2: '>=7.0.3'
 
 shellEmulator: true
