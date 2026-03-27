@@ -1,6 +1,6 @@
 {
   "name": "@minch/use-event-source",
-  "version": "1.3.10",
+  "version": "1.3.11",
   "description": "A Vue composable for simplifying Server-Sent Events.",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -39,7 +39,7 @@
   "peerDependencies": {
     "vue": "^3.0.0"
   },
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.33.0",
   "keywords": [
     "nuxt",
     "vue",
