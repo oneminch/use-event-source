@@ -8,9 +8,9 @@ catalogs:
     '@antfu/ni': ^27.0.1
     bumpp: ^10.4.1
     eslint: ^9.39.4
-    tsdown: ^0.21.5
+    tsdown: ^0.21.7
     typescript: ^5.9.3
-    vite: ^7.3.1
+    vite: ^7.3.2
   inlined:
     '@antfu/utils': ^9.3.0
   playground:
@@ -18,7 +18,7 @@ catalogs:
     vue: ^3.5.31
     vue-router: ^4.6.4
   types:
-    '@types/node': ^24.12.0
+    '@types/node': ^24.12.2
 
 ignoreWorkspaceRootCheck: true
 
@@ -28,6 +28,10 @@ onlyBuiltDependencies:
 
 overrides:
   brace-expansion@<5.0.5: '>=5.0.5'
+  defu@<=6.1.4: '>=6.1.5'
+  lodash@<=4.17.23: '>=4.18.0'
+  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
   serialize-javascript@<=7.0.2: '>=7.0.3'
+  unhead@<2.1.13: '>=2.1.13'
 
 shellEmulator: true

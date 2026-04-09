@@ -2,7 +2,7 @@
 
 `useEventSource` is a Vue composable for simplifying Server-Sent Events (SSE).
 
-It is based on the standard `EventSource` interface, and makes working with SSEs simpler in a Vue & Nuxt applications.
+It is based on the standard `EventSource` interface, and makes working with SSEs simpler in Vue & Nuxt applications.
 
 ## Installation
 
