@@ -15,7 +15,7 @@ catalogs:
     '@antfu/utils': ^9.3.0
   playground:
     nuxt: ^4.4.2
-    vue: ^3.5.31
+    vue: ^3.5.32
     vue-router: ^4.6.4
   types:
     '@types/node': ^24.12.2
@@ -28,10 +28,6 @@ onlyBuiltDependencies:
 
 overrides:
   brace-expansion@<5.0.5: '>=5.0.5'
-  defu@<=6.1.4: '>=6.1.5'
-  lodash@<=4.17.23: '>=4.18.0'
-  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
   serialize-javascript@<=7.0.2: '>=7.0.3'
-  unhead@<2.1.13: '>=2.1.13'
 
 shellEmulator: true
