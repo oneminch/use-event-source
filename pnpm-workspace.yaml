@@ -7,18 +7,18 @@ catalogs:
     '@antfu/eslint-config': ^6.7.3
     '@antfu/ni': ^27.0.1
     bumpp: ^10.4.1
-    eslint: ^9.39.4
-    tsdown: ^0.22.0
+    eslint: ^9.39.5
+    tsdown: ^0.22.14
     typescript: ^5.9.3
-    vite: ^7.3.3
+    vite: ^7.3.6
   inlined:
     '@antfu/utils': ^9.3.0
   playground:
-    nuxt: ^4.4.6
+    nuxt: ^4.5.0
     vue: ^3.5.34
     vue-router: ^4.6.4
   types:
-    '@types/node': ^24.12.4
+    '@types/node': ^24.13.3
 
 ignoreWorkspaceRootCheck: true
 
@@ -27,3 +27,16 @@ allowBuilds:
   esbuild: true
 
 shellEmulator: true
+
+minimumReleaseAgeExclude:
+  - shell-quote@1.8.4 || 1.8.5
+  - tar@7.5.16 || 7.5.17 || 7.5.18 || 7.5.19 || 7.5.21
+  - launch-editor@2.14.1
+  - nuxt@4.4.7
+  - ws@8.21.0
+  - '@babel/core@7.29.1'
+  - svgo@4.0.2
+  - brace-expansion@5.0.8
+
+overrides:
+  brace-expansion@<=5.0.7: ^5.0.8
